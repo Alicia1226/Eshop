@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SearchProduct from '../Buttons';
+import ProductList from '../ProductList/ProductList';
 import './Main.css';
 
 class Main extends Component {
@@ -18,7 +20,10 @@ class Main extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <SearchProduct/>
+        <ProductList/>
+      </div>
     );
   }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './SearchProduct.css';
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import './Buttons.css';
 
 class SearchProduct extends Component {
   // constructor(props){
@@ -18,7 +20,13 @@ class SearchProduct extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+          <Button>Precio</Button>
+          <Button>Nombre</Button>
+          <Button>Relevancia</Button>
+        </ButtonGroup>
+      </div>
     );
   }
 }

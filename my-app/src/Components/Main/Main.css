@@ -3,5 +3,7 @@
 */
 
 .Main {
-    /* propertys here */
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
