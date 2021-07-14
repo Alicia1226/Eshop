@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchProduct from '../Buttons';
 import ProductList from '../ProductList/ProductList';
+import Grid from '@material-ui/core/Grid';
 import './Main.css';
 
 class Main extends Component {
@@ -22,7 +23,10 @@ class Main extends Component {
     return (
       <div>
         <SearchProduct/>
-        <ProductList/>
+        <Grid xs={16}>
+          <ProductList/>
+        </Grid>
+        
       </div>
     );
   }

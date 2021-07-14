@@ -5,8 +5,7 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 import './App.css';
 
-export class App extends Component {
-    render() {
+const App=()=> {
         return (
             <div className="App">
                 <BrowserRouter>
@@ -15,8 +14,7 @@ export class App extends Component {
                     <Footer/>
                 </BrowserRouter>
             </div>
-        );
-    }
+        )
 }
 
 export default App;
