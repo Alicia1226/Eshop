@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SearchProduct from '../Buttons';
 import ProductList from '../ProductList/ProductList';
 import Grid from '@material-ui/core/Grid';
 import './Main.css';
+import { Route, Switch } from 'react-router-dom';
 
-class Main extends Component {
+const Main=()=> {
   // constructor(props){
     // super(props);
     // this.state = {};
@@ -19,17 +20,19 @@ class Main extends Component {
   // componentWillUpdate(){}
   // componentDidUpdate(){}
 
-  render() {
+
     return (
       <div>
-        <SearchProduct/>
+        {/* <SearchProduct/>
         <Grid xs={16}>
           <ProductList/>
-        </Grid>
-        
+        </Grid> */}
+        <Switch>
+                <Route path="/" component={ProductList} exact/>
+            </Switch>
       </div>
     );
-  }
+
 }
 
 export default Main;
