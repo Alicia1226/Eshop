@@ -1,7 +1,7 @@
 import React from 'react';
-import SearchProduct from '../Buttons';
-import ProductList from '../ProductList/ProductList';
-import Grid from '@material-ui/core/Grid';
+import Buttons from '../Buttons';
+import Product from '../Product/Product';
+// import Grid from '@material-ui/core/Grid';
 import './Main.css';
 import { Route, Switch } from 'react-router-dom';
 
@@ -28,8 +28,9 @@ const Main=()=> {
           <ProductList/>
         </Grid> */}
         <Switch>
-                <Route path="/" component={ProductList} exact/>
-            </Switch>
+          <Route path="/" component={Product} exact/>
+        </Switch>
+        <Buttons/>
       </div>
     );
 

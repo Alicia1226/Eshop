@@ -9,6 +9,14 @@ const routes = {
         } catch(err){
             console.log(err)
         }
+    },
+    getPrd:async(req,res)=>{
+        let name = req.params.name
+        let data = await Producto.find({name})
+        console.log(data)
+        res.status(200).json(data)
+
     }
+
 }
 module.exports=routes
