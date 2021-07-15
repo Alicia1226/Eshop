@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="Footer">
       <Grid item xs={12}>
       <Box m={8} />
-        <ButtonGroup aria-label="outlined primary button group">
+        <ButtonGroup aria-label="outlined primary button group" color="secondary">
           <Button>Anterior</Button>
           <Button>Siguiente</Button>
         </ButtonGroup>

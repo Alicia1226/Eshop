@@ -7,7 +7,7 @@ export default function Header() {
     return (
       <div>
         <h1>
-          Eshop
+          VeggieShop
         </h1>
         
       </div>

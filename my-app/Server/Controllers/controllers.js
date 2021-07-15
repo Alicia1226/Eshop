@@ -12,11 +12,19 @@ const routes = {
     },
     getPrd:async(req,res)=>{
         let name = req.params.name
-        let data = await Producto.find({name})
+        console.log(name)
+        let regex = new RegExp(name,'i')
+        let data = await Producto.find({
+        $or:
+            [
+                {Name: {$regex: regex}},
+                {title: {$regex: regex}}
+            ]
+        })
+
         console.log(data)
-        res.status(200).json(data)
+    res.status(200).json(data)
 
     }
-
 }
 module.exports=routes

@@ -21,7 +21,7 @@ class SearchProduct extends Component {
   render() {
     return (
       <div>
-        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+        <ButtonGroup variant="contained" color="secondary" aria-label="contained primary button group">
           <Button>Precio</Button>
           <Button>Nombre</Button>
           <Button>Relevancia</Button>

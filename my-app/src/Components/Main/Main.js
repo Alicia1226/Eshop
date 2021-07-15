@@ -1,5 +1,4 @@
 import React from 'react';
-import Buttons from '../Buttons';
 import Product from '../Product/Product';
 // import Grid from '@material-ui/core/Grid';
 import './Main.css';
@@ -30,7 +29,7 @@ const Main=()=> {
         <Switch>
           <Route path="/" component={Product} exact/>
         </Switch>
-        <Buttons/>
+        
       </div>
     );
 
